@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banking & Finance Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:20px auto;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.amount{
+    font-size:28px;
+    font-weight:bold;
+    color:#28a745;
+}
+
+.transactions{
+    margin-top:30px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.transactions h2{
+    margin-bottom:15px;
+    color:#003366;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+table th{
+    background:#003366;
+    color:white;
+}
+
+.credit{
+    color:green;
+    font-weight:bold;
+}
+
+.debit{
+    color:red;
+    font-weight:bold;
+}
+
+.quick-actions{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.quick-actions button{
+    padding:12px 25px;
+    border:none;
+    background:#003366;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.quick-actions button:hover{
+    background:#0055aa;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🏦 Smart Bank Dashboard</h1>
+    <p>Manage Your Finances Easily</p>
+</header>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Account Balance</h3>
+            <div class="amount">₹1,25,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Savings</h3>
+            <div class="amount">₹80,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Investments</h3>
+            <div class="amount">₹45,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Credit Score</h3>
+            <div class="amount">785</div>
+        </div>
+
+    </div>
+
+    <div class="quick-actions">
+        <button>Transfer Money</button>
+        <button>Pay Bills</button>
+        <button>View Statement</button>
+        <button>Apply Loan</button>
+    </div>
+
+    <div class="transactions">
+        <h2>Recent Transactions</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Amount</th>
+            </tr>
+
+            <tr>
+                <td>01-Jun-2026</td>
+                <td>Salary Credit</td>
+                <td class="credit">Credit</td>
+                <td class="credit">+ ₹50,000</td>
+            </tr>
+
+            <tr>
+                <td>30-May-2026</td>
+                <td>Electricity Bill</td>
+                <td class="debit">Debit</td>
+                <td class="debit">- ₹2,500</td>
+            </tr>
+
+            <tr>
+                <td>28-May-2026</td>
+                <td>Online Shopping</td>
+                <td class="debit">Debit</td>
+                <td class="debit">- ₹3,200</td>
+            </tr>
+
+            <tr>
+                <td>25-May-2026</td>
+                <td>Mutual Fund Return</td>
+                <td class="credit">Credit</td>
+                <td class="credit">+ ₹4,500</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

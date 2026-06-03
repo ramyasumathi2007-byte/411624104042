@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200') center/cover;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+    border-radius:10px;
+}
+
+.booking-form{
+    background:white;
+    width:80%;
+    max-width:800px;
+    margin:30px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.booking-form h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0077b6;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+.destinations{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:green;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>✈ Travel Booking App</h1>
+</header>
+
+<section class="hero">
+    <h1>Explore the World With Us</h1>
+</section>
+
+<div class="booking-form">
+    <h2>Book Your Trip</h2>
+
+    <div class="form-group">
+        <label>From</label>
+        <input type="text" placeholder="Enter Departure City">
+    </div>
+
+    <div class="form-group">
+        <label>To</label>
+        <input type="text" placeholder="Enter Destination City">
+    </div>
+
+    <div class="form-group">
+        <label>Departure Date</label>
+        <input type="date">
+    </div>
+
+    <div class="form-group">
+        <label>Travel Type</label>
+        <select>
+            <option>Flight</option>
+            <option>Train</option>
+            <option>Bus</option>
+        </select>
+    </div>
+
+    <button>Search Trips</button>
+</div>
+
+<h2 style="text-align:center;">Popular Destinations</h2>
+
+<div class="destinations">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=500">
+        <div class="card-content">
+            <h3>Dubai</h3>
+            <p>Starting ₹30,000</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=500">
+        <div class="card-content">
+            <h3>Singapore</h3>
+            <p>Starting ₹35,000</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html> 
